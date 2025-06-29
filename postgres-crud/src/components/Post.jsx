@@ -23,6 +23,7 @@ function Post({ postId, authorName, title, content }) {
       </div>
       <div>
         <button
+          className="text-red-600 bg-red-100 rounded-lg px-2"
           onClick={async () => {
             try {
               const response = await fetch(`/api/delete-post/${postId}`, {
